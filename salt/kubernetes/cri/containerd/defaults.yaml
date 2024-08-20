@@ -1,0 +1,16 @@
+containerd:
+  enabled: true
+  version: 1.4.11
+  root: /var/lib/containerd
+  state: /run/containerd
+  grpc:
+    address: /run/containerd/containerd.sock
+  cni:
+    bin_dir: /opt/cni/bin
+    conf_dir: /etc/cni/net.d
+  opt:
+    path: /opt/containerd
+
+  use_upstream_repo: true
+  use_old_repo: false
+  proxy: false
